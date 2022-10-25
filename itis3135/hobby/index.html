@@ -52,6 +52,17 @@
                 margin: 0;
             }
 
+            /* image stuff */ 
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
             
 
         </style>
@@ -68,7 +79,9 @@
             <section class="hobby">
 
                 <h1> 
-                    Lacrosse
+                    <center>
+                        Lacrosse
+                    </center>>
                 </h1>
 
                 <section class="hobby-what">
@@ -85,11 +98,11 @@
                 <div class="row">
 
                     <div class="column">
-                    <img src="images/pexels-pixabay-159573.jpg" width="550" height="550">
+                    <img src="images/pexels-pixabay-159573.jpg" width="550" height="550" style="width:100%">
                     </div>
 
                     <div class="column">
-                        <img src="images/pexels-pixabay-264382.jpg" width="550" height="550">
+                        <img src="images/pexels-pixabay-264382.jpg" width="550" height="550" style="width:100%" >
                     </div>
 
                 </div>
