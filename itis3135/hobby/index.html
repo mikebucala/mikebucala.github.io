@@ -3,7 +3,7 @@
 
     <head>
         <style>
-            
+
             /* Background colors/sizing */
             body, h1 {
                 margin:0;
@@ -13,40 +13,45 @@
                 background: aqua;
             }
 
-            .hobby-what { 
+            #hobby-what { 
                 height: 100vh;
                 background: aqua;
                 box-sizing: border-box;
             }
 
-            .hobby-who { 
+            #hobby-who { 
                 height: 100vh;
                 background: seagreen;
                 box-sizing: border-box;
+                display: none;
             }
 
-            .hobby-when { 
+            #hobby-when { 
                 height: 100vh;
                 background: red;
                 box-sizing: border-box;
+                display: none;
             }
 
-            .hobby-where { 
+            #hobby-where { 
                 height: 100vh;
                 background: yellow;
                 box-sizing: border-box;
+                display: none;
             }
 
-            .hobby-how { 
+            #hobby-how { 
                 height: 100vh;
                 background: purple;
                 box-sizing: border-box;
+                display: none;
             }
 
-            .hobby-why { 
+            #hobby-why { 
                 height: 100vh;
                 background: orange;
                 box-sizing: border-box;
+                display: none;
             }
 
             .hobby h2 { 
@@ -73,6 +78,18 @@
             main { 
                 font-family: Georgia, serif;
             }
+
+            /* Buttons */
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
             
 
         </style>
@@ -83,6 +100,17 @@
 
         <header> 
             <h1> Mike Bucala &spades; ITIS 3135 </h1> 
+            <nav> 
+                <button class="button" id="what">What</button>
+                <button class="button" id="who">Who</button>
+                <button class="button" id="when">When</button>
+                <button class="button" id="where">Where</button>
+                <button class="button" id="how">How</button>
+                <button class="button" id="why">Why</button>
+
+            
+            </nav>
+            
         </header>
 
         <main>
@@ -94,7 +122,7 @@
                     </center>
                 </h1>
 
-                <section class="hobby-what">
+                <section class="hobby-what" id="hobby-what">
 
                     <h2>
                         What is Lacrosse ?
@@ -135,9 +163,21 @@
                     </div>
 
                 </div>
+                <script >
+                    document.getElementById("what").onclick = function() {
+                        
+                        document.getElementById("hobby-what").style.display = "block";
+                        
+                        document.getElementById("hobby-who").style.display = "none";
+                        document.getElementById("hobby-when").style.display = "none";
+                        document.getElementById("hobby-where").style.display = "none";
+                        document.getElementById("hobby-how").style.display = "none";
+                        document.getElementById("hobby-why").style.display = "none";
+                    }
+                </script>
                 </section>
                 
-                <section class="hobby-who">
+                <section class="hobby-who" id="hobby-who">
                     <h2>
                         About me
                     </h2>
@@ -160,10 +200,24 @@
                         </div>
 
                     </div>
+                    <script >
+                        document.getElementById("who").onclick = function() {
+                
+                            document.getElementById("hobby-who").style.display = "block";
+
+                            document.getElementById("hobby-what").style.display = "none";
+                            document.getElementById("hobby-when").style.display = "none";
+                            document.getElementById("hobby-where").style.display = "none";
+                            document.getElementById("hobby-how").style.display = "none";
+                            document.getElementById("hobby-why").style.display = "none";
+                            
+                
+                        }
+                    </script>
 
                 </section>
 
-                <section class="hobby-when">
+                <section class="hobby-when" id="hobby-when">
                     <h2>
                         My Best Time's in Lacrosse:
                     </h2>
@@ -185,36 +239,94 @@
                         </div>
 
                     </div>
+
+                    <script >
+                        document.getElementById("when").onclick = function() {
+                
+                            document.getElementById("hobby-when").style.display = "block";
+
+                            document.getElementById("hobby-what").style.display = "none";
+                            document.getElementById("hobby-who").style.display = "none";
+                            document.getElementById("hobby-where").style.display = "none";
+                            document.getElementById("hobby-how").style.display = "none";
+                            document.getElementById("hobby-why").style.display = "none";
+                
+                        }
+                    </script>
                 </section>
 
-                <section class="hobby-where">
+                <section class="hobby-where" id="hobby-where">
                     <h2>
                         My Highschool Team: Southern Alamance Patriots
                     </h2>
                     <p>
-                        Sample text 
+                        My Highschool team was the Southern Alamance High School Patriots. We were a decent sized school, but not a lot of people played lacrosse in my hometown. 
+                        My team had a couple of people who grew up playing and helped a lot of the newer guys learn a lot the basics a lot faster. My sophmore and most of my junior
+                        year, we lost almost every game we played not because they were a lot better than us, but most of our players were new and would make simple mistakes. With a 
+                        little time we got pretty good but it never mattered to us if we were winning or losing because no matter what after every single game we could learn something 
+                        to become better.  
                     </p>
+                    <script >
+                        document.getElementById("where").onclick = function() {
+                
+                            document.getElementById("hobby-where").style.display = "block";
+
+                            document.getElementById("hobby-what").style.display = "none";
+                            document.getElementById("hobby-when").style.display = "none";
+                            document.getElementById("hobby-who").style.display = "none";
+                            document.getElementById("hobby-how").style.display = "none";
+                            document.getElementById("hobby-why").style.display = "none";
+                
+                        }
+                    </script>
                 </section>
 
-                <section class="hobby-how">
+                <section class="hobby-how" id="hobby-how">
                     <h2>
                         How did I get into lacrosse
                     </h2>
                     <p>
                         Sample text 
                     </p>
+                    <script >
+                        document.getElementById("how").onclick = function() {
+                
+                            document.getElementById("hobby-how").style.display = "block";
+
+                            document.getElementById("hobby-what").style.display = "none";
+                            document.getElementById("hobby-when").style.display = "none";
+                            document.getElementById("hobby-where").style.display = "none";
+                            document.getElementById("hobby-who").style.display = "none";
+                            document.getElementById("hobby-why").style.display = "none";
+                
+                        }
+                    </script>
                 </section>
 
-                <section class="hobby-why">
+                <section class="hobby-why" id="hobby-why">
                     <h2>
                         Why did I start playing lacrosse ? 
                     </h2>
                     <p>
                         Sample text 
                     </p>
+                    <script >
+                        document.getElementById("why").onclick = function() {
+                
+                            document.getElementById("hobby-why").style.display = "block";
+
+                            document.getElementById("hobby-what").style.display = "none";
+                            document.getElementById("hobby-when").style.display = "none";
+                            document.getElementById("hobby-where").style.display = "none";
+                            document.getElementById("hobby-how").style.display = "none";
+                            document.getElementById("hobby-who").style.display = "none";
+                            
+                        }
+                    </script>
                 </section>
 
             </section>
+            
             
         </main>
 
@@ -225,4 +337,12 @@
 
     </body>
 
+
+    
+
+    
+    
+    
+    
+    
     
