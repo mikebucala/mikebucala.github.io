@@ -2,6 +2,7 @@
     <html lang="en">
 
     <head>
+        <title>Mike Bucala ITIS 3135</title>
         <style>
 
             /* Background colors/sizing */
@@ -9,53 +10,49 @@
                 margin:0;
             }
 
-            header, h1{ 
-                background: aqua;
-            }
+            
 
             #hobby-what { 
                 height: 100vh;
-                background: aqua;
                 box-sizing: border-box;
             }
 
             #hobby-who { 
                 height: 100vh;
-                background: seagreen;
                 box-sizing: border-box;
                 display: none;
             }
 
             #hobby-when { 
                 height: 100vh;
-                background: red;
                 box-sizing: border-box;
                 display: none;
             }
 
             #hobby-where { 
                 height: 100vh;
-                background: yellow;
                 box-sizing: border-box;
                 display: none;
             }
 
             #hobby-how { 
                 height: 100vh;
-                background: purple;
                 box-sizing: border-box;
                 display: none;
             }
 
             #hobby-why { 
                 height: 100vh;
-                background: orange;
                 box-sizing: border-box;
                 display: none;
             }
 
             .hobby h2 { 
                 margin: 0;
+            }
+
+            #lacrosseHead { 
+                text-align: center;
             }
 
             /* image stuff */ 
@@ -99,8 +96,12 @@
     <body>
 
         <header> 
-            <h1> Mike Bucala &spades; ITIS 3135 </h1> 
+            
+            
             <nav> 
+                <a href="first_website/itis.html" >
+                <button class="button" id="back">Back</button>
+                </a>
                 <button class="button" id="what">What</button>
                 <button class="button" id="who">Who</button>
                 <button class="button" id="when">When</button>
@@ -116,11 +117,12 @@
         <main>
             <section class="hobby">
 
-                <h1> 
-                    <center>
-                        Lacrosse
-                    </center>
+                <h1 id="lacrosseHead"> 
+                
+                    Lacrosse
+                    
                 </h1>
+                
 
                 <section class="hobby-what" id="hobby-what">
 
@@ -137,19 +139,26 @@
                     <h3>
                         The rules of lacrosse are very similar to hockeys rules. Every player can be penalized and placed in the penalty box for a varying amount of time (depending on the
                         severity of the penalty) leaving their team down a man. Here are a list of a couple of different penalties and what causes them:
-                        <ul> 
-                            <li>Personal Fouls:</li>
-                            <ul>
-                                <li>Slashing: When a player violently swings their stick and strikes a player</li>
-                                <li>Illegal Cross-Check: When a player makes contact with another player and their hands are spread apart</li>
-                            </ul>
-                            <li>Technical Fouls:</li>
-                            <ul>
-                                <li>Offsides: Offsides occurs when there are too many defensive or offensive players on one side of the field</li>
-                                <li>Holding: Holding is when a player keeps a player from moving in any way using their hands, stick, etc.</li>
-                            </ul>
-                        </ul>
+                       
                     </h3>
+
+                    <ul> 
+                        <li>Personal Fouls:</li>
+                        <li>
+                        <ul>
+                            <li>Slashing: When a player violently swings their stick and strikes a player</li>
+                            <li>Illegal Cross-Check: When a player makes contact with another player and their hands are spread apart</li>
+                        </ul>
+                        </li>
+
+                        <li>Technical Fouls:</li>
+                        <li>
+                        <ul>
+                            <li>Offsides: Offsides occurs when there are too many defensive or offensive players on one side of the field</li>
+                            <li>Holding: Holding is when a player keeps a player from moving in any way using their hands, stick, etc.</li>
+                        </ul>
+                        </li>
+                    </ul>
 
                 
                 <div class="row">
@@ -200,14 +209,14 @@
                         <div class="column">
                             <figure>
                             <img src="images/sahs_lax_1.jpg" width="550" height="550" style="width:100%">
-                            <figcaption>Sample Text</figcaption>
+                            <figcaption>Image taken with all of some of my friends and I right after our last game</figcaption>
                             </figure>
                         </div>
                         
                         <div class="column">
                             <figure>
                                 <img src="images/sahs_lax_2.jpg" width="550" height="550" style="width:100%" >
-                                <figcaption>Sample Text</figcaption>
+                                <figcaption>Image of me during a game</figcaption>
                             </figure>
                         </div>
 
@@ -245,14 +254,14 @@
                         <div class="column">
                             <figure>
                                 <img src="images/sahs_lax_3.jpg" width="550" height="550" style="width:100%">
-                                <figcaption>Sample Text</figcaption>
+                                <figcaption>Image of me for our picture day</figcaption>
                             </figure>
                         </div>
                         
                         <div class="column">
                             <figure>
                                 <img src="images/sahs_lax_4.jpg" width="550" height="550" style="width:100%" >
-                                <figcaption>Sample Text</figcaption>
+                                <figcaption>Image of me stick checking someone</figcaption>
                             </figure>
                         </div>
 
@@ -289,14 +298,14 @@
                         <div class="column">
                             <figure>
                                 <img src="images/sahs_lax_5.jpg" width="550" height="550" style="width:100%">
-                                <figcaption>Sample text</figcaption>
+                                <figcaption>Team photo of all of the seniors</figcaption>
                             </figure>
                         </div>
                         
                         <div class="column">
                             <figure>
                                 <img src="images/sahs_lax_6.jpg" width="550" height="550" style="width:100%" >
-                                <figcaption>Sample text</figcaption>
+                                <figcaption>Team photo of us praying before a game</figcaption>
                             </figure>
                         </div>
 
@@ -321,10 +330,10 @@
                         How lacrosse began 
                     </h2>
                     <h3>
-                        Lacrosse was created and first played by Native Americans. Lacrosse began as a game know to them as stickball. Lacrosse started as a way to toughen warriors 
-                        of Native American tribes (We will talk more about that on the why page). The original game of lacrosse was played over huge stretches of open fields that were
+                        Lacrosse was created and first played by Native Americans. Lacrosse began as a game know to them as stickball. The original game of lacrosse was played over huge stretches of open fields that were
                         sometimes miles long. There was no "out of bounds" and the only rule was not to tough the ball with your hands.The game would start by someone throwing the ball 
-                        into the air (instead of a faceoff) and someone catching it or getting it off the ground.
+                        into the air (instead of a faceoff) and someone catching it or getting it off the ground. Lacrosse was eventually shown to french missionaries who spread lacrosse
+                        to other regions of the world. 
 
                     </h3>
 
@@ -343,6 +352,7 @@
                                 <figcaption>Fig.2 - Painting of Native Americans playing lacrosse (“Indian Ball Game” by George Catlin (courtesy Smithsonian American Art Museum))</figcaption>
                             </figure>
                         </div>
+                    </div>
 
                     
                     <script >
@@ -362,11 +372,38 @@
 
                 <section class="hobby-why" id="hobby-why">
                     <h2>
-                        Why did I start playing lacrosse ? 
+                        Why did the Native Americans start playing lacrosse 
                     </h2>
                     <h3>
-                        Sample text 
+                        The Native Americans started playing lacrosse as a way to train and "harden" warriors within their tribe. They would play lacrosse to settle disputes between tribes,
+                        or even just for recreation or religious resasons. The way Native Americans played lacrosse back then was a lot different from the way it is played now. There were no 
+                        rules beside using your stick instead of your hands. This led to a much more extreme and violent version of lacrosse and was the reason it was used to train warriors.
+                        
                     </h3>
+                    <h3>Some of the religious reasons they would play lacrosse for are: </h3>
+                    <ul>
+                        <li>Giving honor/respect to the heavens</li>
+                        <li>Honoring the dead/fallen</li>
+                        <li>Apart of a funeral service</li>
+                    </ul>
+
+                    <div class="row">
+
+                        <div class="column">
+                            <figure>
+                                <img src="images/WarriorsGame_threeVillageLacrosse.jpg" width="550" height="550" style="width:100%">
+                                <figcaption>Fig.1 -  Native americans playing lacrosse (Photo from three village lacrosse)</figcaption>
+                            </figure>
+                        </div>
+    
+                        <div class="column">
+                            <figure>
+                                <img src="images/vintage_lacrrose_historyorg.jpg" width="550" height="550" style="width:100%" >
+                                <figcaption>Fig.2 - Native Americans playing lacrosse (Photo from history.com)</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
                     <script >
                         document.getElementById("why").onclick = function() {
                 
@@ -389,6 +426,25 @@
 
 
         <footer>
+            
+            
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!">
+            </a>
+            
+
+           
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjbucala%2Fitis3135%2Fhobby%2Findex.html">
+                <img style="border:0;width:88px;height:31px"
+                    src="images/valid-html401.png"
+                    alt="Valid HTML!" >
+            </a>
+           
+
+            
+                  
         
         </footer>
 
