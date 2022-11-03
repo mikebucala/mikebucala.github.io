@@ -1,8 +1,8 @@
 $(function () 
 {
-  $("#topnav-placeholder").load("topnavigation.html");
+  $("topnav-placeholder").load("topnavigation.html");
 });
 $(function () 
 {
-  $("#bottomnav-placeholder").load("bottomnavigation.html");
+  $("bottomnav-placeholder").load("bottomnavigation.html");
 });
