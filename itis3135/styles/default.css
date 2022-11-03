@@ -31,4 +31,11 @@ figcaption
 	font-style: italic;
 }
 
+main h2
+{
+  font-family: courier, serif;
+  text-align: center;
+ 
+}
+
 
