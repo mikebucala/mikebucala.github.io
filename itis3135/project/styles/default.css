@@ -1,0 +1,47 @@
+body {
+    background-color: pink;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  body
+  {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-left: 75px;
+      margin-right: 75px;
+  }
+  
+  
+  header, footer
+  {
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  
+  
+  figcaption
+  {
+      font-style: italic;
+  }
+  
+  main h2
+  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+
+  .column 
+  {
+    float: left;
+    width: 33.33%;
+    padding: 3px;
+}
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
