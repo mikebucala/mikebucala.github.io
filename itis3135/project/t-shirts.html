@@ -9,8 +9,82 @@
     <body>
         <div data-include="components/topnav.html"></div>
 
-        <main>
+        <main id="slideshow">
+            <h2>
+                T-Shirt Showcase
+            </h2>
+            <p>
+                This page showcases Ham's Creations previous different T-Shirt designs. Use the red boxes on the left and right to go between the pictures or use the dots under the image
+                to change to different images. 
+            </p>
+            <script src = "scripts/jquery.js"></script>
+            <div class="image-container">
+                <div class="slide">
+                    <div class="slideNumber">1</div>
+                    <img src ="images/shirt1.jpg" alt="shirt1">
+                </div>
+
+                <div class="slide">
+                    <div class="slideNumber">2</div>
+                    <img src ="images/shirt2.jpg" alt="shirt2">
+                </div>
+
+                <div class="slide">
+                    <div class="slideNumber">3</div>
+                    <img src ="images/shirt3.jpg" alt="shirt3">
+                </div>
+
+                <div class="slide">
+                    <div class="slideNumber">4</div>
+                    <img src ="images/shirt4.jpg" alt="shirt4">
+                </div>
+
+                <div class="slide">
+                    <div class="slideNumber">5</div>
+                    <img src ="images/shirt5.jpg" alt="shirt5">
+                </div>
+
+                <div class="slide">
+                    <div class="slideNumber">6</div>
+                    <img src ="images/shirt6.jpg" alt="shirt6">
+                </div>
+
+                <a class="previous" onclick="moveSlides(-1)">
+                    <i class="fa fa-chevron-circle-left"></i>
+                </a>
+
+                <a class="next" onclick="moveSlides(1)">
+                    <i class="fa fa-chevron-circle-right"></i>
+                </a>
+                
+            </div>
+            <br>
             
+
+            <div style="text-align:center">
+                <span class="footerdot"
+                    onclick="activeSlide(1)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(2)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(3)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(4)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(5)">
+                </span>
+                <span class="footerdot"
+                    onclick="activeSlide(6)">
+                </span>
+            </div>
+
+            
+
+            <script src = "scripts/slideshow.js"></script>
         </main>
 
         <div data-include="components/bottomnav.html"></div>
