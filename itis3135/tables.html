@@ -3,21 +3,166 @@
 <head>
   <link rel="stylesheet" href="styles/default.css">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="scripts/navigation.js"></script>
+  <script src = "scripts/htmlinclusion.js"></script>
   <title> Mike Bucala, ITIS 3135, Tables </title>
 </head>
 
 <body>
 
-    <header id="topnav-placeholder"></header>
+  <div data-include="components/topnavigation.html"></div>
   
 
-    <main>
+    <main class="tables">
         <h2>Tables</h2>
+
+        <h3 style="text-align:left">
+          My Tabular Data 
+        </h3>
+
+        <ol>
+          <li>
+            Zack Freeman zackfreeman@gmail.com 7 
+          </li>
+          <li>
+            Mike Rack mikerack@gmail.com 2
+          </li>
+          <li>
+            Selina Crow selinacrow@gmail.com 1 
+          </li>
+          <li>
+            Rowan Gataway rowangataway@gmail.com 4 
+          </li>
+          <li>
+            Will Steward willsteward@gmail.com 9 
+          </li>
+          <li> 
+            John Adam johnadam@yahoo.com 5
+          </li>
+          <li>
+            Mack Steel macksteel@gmail.com 10
+          </li>
+        </ol>
+
+        <h3> 
+          Employee Data in Simple table 
+        </h3>
+
+        <table class="center"> 
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Years Of Service</th>
+          </tr>
+          <tr>
+            <td>Zack Freeman</td>
+            <td>zackfreeman@gmail.com</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td> Mike Rack</td>
+            <td>mikerack@gmail.com</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td> Selina Crow</td>
+            <td>selinacrow@gmail.com</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td> Rowan Gataway</td>
+            <td>rowangataway@gmail.com</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td> Will Steward</td>
+            <td>willsteward@gmail.com</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td> John Adam</td>
+            <td>johnadam@yahoo.com</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td> Mack Steel</td>
+            <td>macksteel@yahoo.com</td>
+            <td>10</td>
+          </tr>
+        </table>
+
+        <h3> 
+          Employee Data in Complex table 
+        </h3>
+
+        <figure>
+          <table class="center"> 
+            <tr>
+              <th id="Position" headers="Position" >Position</th>
+              <th id="Name" headers="Name" >Name</th>
+              <th id="Email" headers="Email">Email</th>
+              <th id="Years_of_Service" headers="Years_of_Service" >Years Of Service</th>
+              <th id="Salary" headers="Salary" >Salary</th>
+            </tr>
+            <tr>
+              <td headers="Position" rowspan="1">CEO</td>
+              <td headers="Name">Zack Freeman</td>
+              <td headers="Email">zackfreeman@gmail.com</td>
+              <td headers="Years_of_Service">7</td>
+              <td headers="Salary">$150,000</td>
+            </tr>
+            <tr>
+              <td headers="Position" rowspan="2">CFO</td>
+              <td headers="Name"> Mike Rack</td>
+              <td headers="Email">mikerack@gmail.com</td>
+              <td headers="Years_of_Service">2</td>
+              <td headers="Salary" >$100,000</td>
+            </tr>
+            <tr>
+              <td headers="Name">Selina Crow</td>
+              <td headers="Email">selinacrow@gmail.com</td>
+              <td headers="Years_of_Service">1</td>
+              <td headers="Salary">$100,000</td>
+            </tr>
+            <tr>
+              <td headers="Position" rowspan="2">Engineer</td>
+              <td headers="Name"> Rowan Gataway</td>
+              <td headers="Email">rowangataway@gmail.com</td>
+              <td headers="Years_of_Service">4</td>
+              <td headers="Salary">$90,000</td>
+            </tr>
+            <tr>
+              <td headers="Name"> Will Steward</td>
+              <td headers="Email">willsteward@gmail.com</td>
+              <td headers="Years_of_Service">9</td>
+              <td headers="Salary">$90,000</td>
+            </tr>
+            <tr>
+              <td headers="Position" rowspan="2">Receptionist</td>
+              <td headers="Name"> John Adam</td>
+              <td headers="Email">johnadam@yahoo.com</td>
+              <td headers="Years_of_Service">5</td>
+              <td headers="Salary">$80,000</td>
+            </tr>
+            <tr>
+              <td headers="Name"> Mack Steel</td>
+              <td headers="Email">macksteel@yahoo.com</td>
+              <td headers="Years_of_Service">10</td>
+              <td headers="Salary">$80,000</td>
+            </tr>
+
+            <tr>
+              <th id="par" colspan="3" scope="colgroup" >Total Years of Service</th>
+              <th id="co4_co9" headers="Years_of_Service">38</th>
+              <th id="co5_co9" headers="Salary">$690,000</th>
+           </tr>
+          </table>
+          <figcaption>Employee Information</figcaption>
+      </figure>
       
     </main>
     
-    <footer id="bottomnav-placeholder"></footer>
+    <div data-include="components/bottomnavigation.html"></div>
+    <script src = "scripts/htmlinclusion.js"></script>
 
   </body>
 
