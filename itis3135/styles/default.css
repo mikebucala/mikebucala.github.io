@@ -68,6 +68,27 @@ th
 	text-align: center;
 }
 
+/* Forms activity */
+
+form { 
+	text-align: center;
+    border-style: inset;
+    border-color: black;
+    background-color: whitesmoke;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+}
+
+button { 
+	background-color:powderblue;
+	color: gray;
+}
+
+button:hover { 
+	background-color:darkgray ;
+}
+
 /*Slide Show Activity 9 */
 
 #slideshow img {

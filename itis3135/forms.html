@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html lang = "en">
+  <head>
+      <link rel="stylesheet" href="styles/default.css">
+      <title> Mike Bucala, ITIS 3135, Forms </title>
+  </head>
+
+  <body>
+
+    
+
+    <br>
+
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2> Contact Information For Follow Up</h2>
+        <form>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Ex. Mike" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ex. Bucala" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="(###)-###-####" autocomplete="on" required> 
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Ex. abc123@gmail.com" autocomplete="on" required> 
+            </div>
+            <br>
+            <div>
+                <label for="experience">Were you happy with your service?</label>
+                <select name="experience" id="experience" size="5" required>
+                    <option value="verySatisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unsatisfied">Unsatisfied</option>
+                    <option value="veryUnsatisfied">Very Unsatisfied</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="followUp" id="followUp" value="followUp">
+                <label for="followUp">Would you like us to reach out to scheldule a followup ?</label>
+            </div>
+
+            <div>
+                <p>Would you like you subscribe to our newletter?</p>
+            </div>
+            <div>
+                <input type="radio" name="newletter" id="yes" value="yes">
+				<label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="newletter" id="no" value="no">
+				<label for="no">No</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+            
+        </form>
+
+    </main>
+    
+    <div data-include="components/footer.html"></div>
+    <script src = "scripts/htmlinclusion.js"></script>
+
+  </body>
+
+</html>
