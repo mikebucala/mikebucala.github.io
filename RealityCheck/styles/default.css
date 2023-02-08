@@ -1,0 +1,115 @@
+body {
+  background-color: pink;
+}
+  
+h1 {
+  color: black;
+}
+  
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+  
+  
+header, footer {
+  text-align: center;
+  font-weight: bold;
+}
+  
+  
+  
+figcaption  {
+  font-style: italic;
+}
+  
+main h2  {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 3px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Slide show styling*/
+#slideshow img {
+	width: 100%;
+}
+#slideshow .height {
+	height: 10px;
+}
+
+#slideshow p, #slideshow h2 {
+  text-align: center;
+}
+	  
+.image-container {
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+}
+	  
+ .next {
+	right: 0;
+}
+	  
+
+.previous, .next {
+	cursor: pointer;
+	background-color: crimson;
+	
+	position: absolute;
+	top: 50%;
+	padding: 10px;
+	margin-top: -25px;
+}
+	  
+	  
+.slideNumber {
+	background-color: #c55555;
+	color: white;
+	border-radius: 25px;
+	right: 0;
+	opacity: .5;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	position: absolute;
+}
+.fa {
+	font-size: 64px;
+}
+	  
+.fa:hover {
+	transform: rotate(360deg);
+	transition: 1s;
+	color: white;
+}
+	  
+.footerdot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+}
+	  
+.active, .footerdot:hover {
+	background-color: black;
+}
+
